@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Player</title>
+    <title>Food Delivery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,60 +12,65 @@
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Browse</a></li>
-            <li><a href="#">Playlists</a></li>
-            <li><a href="#">Favorites</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Specials</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Header Section with Background Image -->
     <header class="header-bg">
-        <h1>Discover and Enjoy Your Favorite Music</h1>
-        <p>Listen to the latest tracks and create your own playlists</p>
-        <a href="#browse" class="btn">Browse Music</a>
+        <h1>Delicious Food Delivered to Your Doorstep</h1>
+        <p>Order online for quick and easy delivery</p>
+        <a href="#menu" class="btn">View Menu</a>
     </header>
 
-    <!-- Browse Music Section -->
-    <section id="browse">
-        <h2>Browse Music</h2>
-        <!-- Add music cards with images, artist names, and play buttons -->
-        <div class="music-card">
-            <img src="song1.jpg" alt="Song 1">
-            <h3>Song 1</h3>
-            <p>Artist Name</p>
-            <button class="play-btn">Play</button>
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <!-- Add menu items with images, descriptions, and prices -->
+        <div class="menu-item">
+            <img src="burger.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <p>Delicious beef burger with fresh vegetables</p>
+            <span>$9.99</span>
+            <button class="btn">Add to Cart</button>
         </div>
 
-        <!-- Add more music cards here -->
+        <!-- Add more menu items here -->
 
     </section>
 
     <!-- Video Section -->
     <section id="video">
-        <h2>Watch Music Videos</h2>
+        <h2>Watch Our Kitchen in Action</h2>
         <video controls>
-            <source src="music-video.mp4" type="video/mp4">
+            <source src="kitchen.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </section>
 
-    <!-- Create Playlist Section -->
-    <section id="create-playlist">
-        <h2>Create Your Playlist</h2>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or special request? Get in touch with us!</p>
         <form>
-            <label for="playlist-name">Playlist Name:</label>
-            <input type="text" id="playlist-name" name="playlist-name" required>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-            <label for="song-list">Song List:</label>
-            <textarea id="song-list" name="song-list" rows="4" required></textarea>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-            <button type="submit" class="btn">Create Playlist</button>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2023 Music Player</p>
+        <p>&copy; 2023 Food Delivery</p>
     </footer>
 
     <script src="script.js"></script>
